@@ -1,6 +1,9 @@
 import xml.etree.ElementTree as ET
 import random
 
+#Have to do something like this to get same format as original idk
+ET.register_namespace("xsi", "http://www.w3.org/2001/XMLSchema-instance")
+
 tree = ET.parse('simtrip1.gpx')
 root = tree.getroot()
 
@@ -13,12 +16,11 @@ dptsim = []
 #Dirty for-loop mmhmmhmhm
 for trk in root.findall('{http://www.topografix.com/GPX/1/1}trk'):
     for trkseg in trk.findall('{http://www.topografix.com/GPX/1/1}trkseg'):
-        for trkpt in trkseg.iter('{http://www.topografix.com/GPX/1/1}trkpt'):
+        for trkpt in trkseg.findall('{http://www.topografix.com/GPX/1/1}trkpt'):
             lonsim.append (trkpt.attrib["lon"])
             latsim.append (trkpt.attrib["lat"])
             dptsim.append (trkpt.attrib["dpt"])
-            #lonsim and latsim lists full of same coordinates, check for iteration error?
-            
+           
             #trkpt.attrib["dpt"] = "test" # Changes the value of 'dpt' attribute
             #print (trkpt.attrib)
 
@@ -45,12 +47,15 @@ s_lonsim = [str (x) for x in lonsim]
 s_latsim = [str (x) for x in latsim]
 s_dptsim = [str (x) for x in dptsim]
 
+
+i = 0; #Variable for coordinate offset iteration
+
 for trk in root.findall('{http://www.topografix.com/GPX/1/1}trk'):
     for trkseg in trk.findall('{http://www.topografix.com/GPX/1/1}trkseg'):
-        for trkpt in trkseg.iter('{http://www.topografix.com/GPX/1/1}trkpt'):
-            i = 1;
-            trkpt.attrib['lon'] = 'kek'  #s_lonsim[i] # Changes the value of longitude attribute
-            trkpt.attrib['lat'] = 'va' #s_latsim[i] # Changes the value of longitude attribute
+        for trkpt in trkseg.findall('{http://www.topografix.com/GPX/1/1}trkpt'):
+            trkpt.attrib['lon'] = s_lonsim[i] # Changes the value of longitude attribute
+            trkpt.attrib['lat'] = s_latsim[i] # Changes the value of longitude attribute
             i = i + 1
-            
+                      
 tree.write('simtrip1.gpx')
+
