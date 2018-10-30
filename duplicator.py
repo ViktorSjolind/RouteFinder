@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import random
 
-tree = ET.parse('simtrip1.gpx')
+tree = ET.parse('trip_official.gpx')
 root = tree.getroot()
 
 #To get same format as original GPX file
@@ -66,5 +66,5 @@ for trk in root.findall('{http://www.topografix.com/GPX/1/1}trk'):
             i = i + 1
             
             
-tree.write('simtrip1.gpx')
+tree.write('trip_unofficial_0.gpx')
 
