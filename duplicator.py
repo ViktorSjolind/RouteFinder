@@ -40,13 +40,15 @@ for x in range(10):
 
     a = 0
     for y in f_lonsim:
-        y = round((y + random.uniform(0.000001, 0.000003)),6)
+        #y = round((y + random.uniform(0.000001, 0.000003)),6) OG code
+        y = round((y + random.uniform(-0.0003, 0.0003)), 6)
         f_lonsim[a] = y
         a = a + 1
         
     b = 0
     for z in f_latsim:
-        z = round((z + random.uniform(0.000001, 0.000003)),6)
+        #z = round((z + random.uniform(0.000001, 0.000003)),6) OG code
+        z = round((z + random.uniform(-0.0003, 0.0003)), 6)
         f_latsim[b] = z
         b = b + 1
         #print (z)
