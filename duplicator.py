@@ -1,11 +1,12 @@
 import xml.etree.ElementTree as ET
 import random
 
+
 # To get same format as original GPX file
 ET.register_namespace("xsi", "http://www.w3.org/2001/XMLSchema-instance")
 ET.register_namespace("", "http://www.topografix.com/GPX/1/1")
 
-number_of_iterations = 1
+number_of_iterations = 0
 
 for x in range(10):
 
@@ -43,8 +44,8 @@ for x in range(10):
         # y = round((y + random.uniform(-0.0001, 0.0001)), 6)
 
         # Create random variables for offsetting
-        even_round = random.uniform(0, 0.0001)
-        odd_round = random.uniform(-0.0001, 0)
+        even_round = random.uniform(0, 0.0002)
+        odd_round = random.uniform(-0.0002, 0)
 
         # Offset based on if number_of_iterations is even or odd
         if (number_of_iterations % 2) == 0:
@@ -62,8 +63,8 @@ for x in range(10):
         # z = round((z + random.uniform(-0.0001, 0.0001)), 6)
 
         # Create random variables for offsetting
-        even_round = random.uniform(0, 0.0001)
-        odd_round = random.uniform(-0.0001, 0)
+        even_round = random.uniform(0, 0.0002)
+        odd_round = random.uniform(-0.0002, 0)
 
         # Offset based on if number_of_iterations is even or odd
         if (number_of_iterations % 2) == 0:
@@ -91,3 +92,5 @@ for x in range(10):
 
     number_of_iterations = number_of_iterations + 1
     tree.write('simtrip' + str(x) + '.gpx')
+
+mplleaflet.show()
