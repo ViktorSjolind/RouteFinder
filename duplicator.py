@@ -8,6 +8,7 @@ ET.register_namespace("", "http://www.topografix.com/GPX/1/1")
 for x in range(10):
 
     tree = ET.parse('trip_official.gpx')
+    #tree = ET.parse('testTrip1.gpx') <-- For test trips
     root = tree.getroot()
 
     # List of attributes
@@ -21,16 +22,16 @@ for x in range(10):
             for trkpt in trkseg.findall('{http://www.topografix.com/GPX/1/1}trkpt'):
                 lonsim.append(trkpt.attrib["lon"])
                 latsim.append(trkpt.attrib["lat"])
-                dptsim.append(trkpt.attrib["dpt"])
+                #dptsim.append(trkpt.attrib["dpt"])
                 # lonsim and latsim lists full of same coordinates, check for iteration error?
 
                 # trkpt.attrib["dpt"] = "test" # Changes the value of 'dpt' attribute
-                # print (trkpt.attrib)
+                
 
     # Convert lists to float values so we can offset them
     f_lonsim = [float(x) for x in lonsim]
     f_latsim = [float(x) for x in latsim]
-    f_dptsim = [float(x) for x in dptsim]
+    #f_dptsim = [float(x) for x in dptsim]
 
     # Offset coordinates
     # Implement random variable somehow
@@ -38,14 +39,12 @@ for x in range(10):
 
     a = 0
     for y in f_lonsim:
-        # y = round((y + random.uniform(0.000001, 0.000003)),6) OG code
         y = round((y + random.uniform(-0.0001, 0.0001)), 6)
         f_lonsim[a] = y
         a = a + 1
 
     b = 0
     for z in f_latsim:
-        # z = round((z + random.uniform(0.000001, 0.000003)),6) OG code
         z = round((z + random.uniform(-0.0001, 0.0001)), 6)
         f_latsim[b] = z
         b = b + 1
@@ -53,7 +52,8 @@ for x in range(10):
     # Convert lists back to string format so we can write them to GPX file
     s_lonsim = [str(x) for x in f_lonsim]
     s_latsim = [str(x) for x in f_latsim]
-    s_dptsim = [str(x) for x in f_dptsim]
+    #s_dptsim = [str(x) for x in f_dptsim]
+
 
     i = 0; # Variable for coordinate offset iteration
 
