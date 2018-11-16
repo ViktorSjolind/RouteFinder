@@ -1,10 +1,11 @@
 from xml.dom import minidom
-import os 
+import os
+import pandas as pd
 
 '''
 input: path to the directory that contains .gpx files
-output: 3 dimensional array containing all trips with all their 
-        respective coordinates and depth
+output: dataframe containing all the trips, with coordinates,
+depth and local time.
 '''
 def parse_xml(path):
     id=0
@@ -15,30 +16,16 @@ def parse_xml(path):
         gpx_file = open(fullname, 'r')
         xmldoc = minidom.parse(gpx_file)
         gpx = xmldoc.getElementsByTagName("gpx")[0]
-        id = id+1 # Count each trip
+        id = id+1 # Keeps count of the trips.
 
-        # Get the gps data and depth
+        # Get the coordinate points and depth.
         trk = gpx.getElementsByTagName("trk")[0]
         trkseg =trk.getElementsByTagName("trkseg")[0]
         trkpts = trkseg.getElementsByTagName("trkpt")
 
-        trip = []
-        # For each coordinate point, append it to the trip list
+        # For each coordinate point, append it to the trip list.
         for trkpt in trkpts:
-            trip_data = []
-            trip_data.append(id)
-            trip_data.append(trkpt.getAttribute("lat"))
-            trip_data.append(trkpt.getAttribute("lon"))
-            trip_data.append(trkpt.getAttribute("dpt"))
-
-            print("Trip: {}".format(id),
-                trkpt.getAttribute("lat"),
-                trkpt.getAttribute("lon"),
-                trkpt.getAttribute("dpt"),
-            )
-
-            trip.append(trip_data)
-        # When all coordinate points have been looped through and
-        # added to the trip list, add the trip to the list of all trips.
-        trips.append(trip)
-    return trips
+            trips.append(("Trip: {}".format(id),trkpt.getAttribute("lat"), trkpt.getAttribute("lon"),trkpt.getAttribute("dpt")))
+    # Convert the trip list into a dataframe.
+    df = pd.DataFrame(List_for_all, columns=['TripNo','Longitude', 'Latitude', 'Depth'])
+    return df
