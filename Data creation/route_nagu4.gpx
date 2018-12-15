@@ -1,0 +1,179 @@
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <metadata>
+  <time>2018-10-15T13:46:22Z</time>
+  <consumption>0.385101</consumption>
+  <weather>
+   <code>116</code>
+   <temp>12</temp>
+   <wndd>194</wndd>
+   <wnds>17</wnds>
+  </weather>
+  <length>850</length>
+ </metadata>
+ <trk>
+  <trkseg>
+   <trkpt dpt="4.01" lat="60.19132" lon="21.909837">
+    <time>2018-10-15T13:46:22Z</time>
+   </trkpt>
+   <trkpt dpt="2.79" lat="60.191445" lon="21.909621">
+    <time>2018-10-15T13:58:25Z</time>
+   </trkpt>
+   <trkpt dpt="3.80" lat="60.191264" lon="21.909758">
+    <time>2018-10-15T13:58:34Z</time>
+   </trkpt>
+   <trkpt dpt="2.88" lat="60.19113" lon="21.910061">
+    <time>2018-10-15T13:58:55Z</time>
+   </trkpt>
+   <trkpt dpt="3.43" lat="60.190969" lon="21.910223">
+    <time>2018-10-15T13:59:06Z</time>
+   </trkpt>
+   <trkpt dpt="3.65" lat="60.191048" lon="21.91051">
+    <time>2018-10-15T13:59:12Z</time>
+   </trkpt>
+   <trkpt dpt="3.43" lat="60.190975" lon="21.910698">
+    <time>2018-10-15T13:59:20Z</time>
+   </trkpt>
+   <trkpt dpt="3.30" lat="60.191293" lon="21.911362">
+    <time>2018-10-15T13:59:42Z</time>
+   </trkpt>
+   <trkpt dpt="3.18" lat="60.19119" lon="21.911382">
+    <time>2018-10-15T13:59:46Z</time>
+   </trkpt>
+   <trkpt dpt="3.35" lat="60.191306" lon="21.91183">
+    <time>2018-10-15T14:00:03Z</time>
+   </trkpt>
+   <trkpt dpt="3.20" lat="60.191101" lon="21.912729">
+    <time>2018-10-15T14:00:27Z</time>
+   </trkpt>
+   <trkpt dpt="3.03" lat="60.191224" lon="21.913563">
+    <time>2018-10-15T14:00:47Z</time>
+   </trkpt>
+   <trkpt dpt="3.22" lat="60.191097" lon="21.913747">
+    <time>2018-10-15T14:00:51Z</time>
+   </trkpt>
+   <trkpt dpt="3.03" lat="60.190967" lon="21.914255">
+    <time>2018-10-15T14:01:07Z</time>
+   </trkpt>
+   <trkpt dpt="3.00" lat="60.190999" lon="21.914222">
+    <time>2018-10-15T14:01:11Z</time>
+   </trkpt>
+   <trkpt dpt="2.15" lat="60.190926" lon="21.91439">
+    <time>2018-10-15T14:01:15Z</time>
+   </trkpt>
+   <trkpt dpt="3.00" lat="60.190967" lon="21.914523">
+    <time>2018-10-15T14:01:19Z</time>
+   </trkpt>
+   <trkpt dpt="2.51" lat="60.190982" lon="21.914614">
+    <time>2018-10-15T14:01:23Z</time>
+   </trkpt>
+   <trkpt dpt="2.19" lat="60.191093" lon="21.914601">
+    <time>2018-10-15T14:01:27Z</time>
+   </trkpt>
+   <trkpt dpt="3.45" lat="60.19129" lon="21.914671">
+    <time>2018-10-15T14:01:39Z</time>
+   </trkpt>
+   <trkpt dpt="2.40" lat="60.191535" lon="21.914737">
+    <time>2018-10-15T14:01:43Z</time>
+   </trkpt>
+   <trkpt dpt="3.24" lat="60.191607" lon="21.914705">
+    <time>2018-10-15T14:01:47Z</time>
+   </trkpt>
+   <trkpt dpt="3.50" lat="60.191637" lon="21.914656">
+    <time>2018-10-15T14:01:51Z</time>
+   </trkpt>
+   <trkpt dpt="3.88" lat="60.191617" lon="21.914705">
+    <time>2018-10-15T14:01:55Z</time>
+   </trkpt>
+   <trkpt dpt="4.12" lat="60.191807" lon="21.9148">
+    <time>2018-10-15T14:01:59Z</time>
+   </trkpt>
+   <trkpt dpt="3.58" lat="60.191744" lon="21.914806">
+    <time>2018-10-15T14:02:03Z</time>
+   </trkpt>
+   <trkpt dpt="3.26" lat="60.192054" lon="21.914937">
+    <time>2018-10-15T14:02:11Z</time>
+   </trkpt>
+   <trkpt dpt="3.48" lat="60.192054" lon="21.914952">
+    <time>2018-10-15T14:02:19Z</time>
+   </trkpt>
+   <trkpt dpt="3.37" lat="60.192319" lon="21.914983">
+    <time>2018-10-15T14:02:23Z</time>
+   </trkpt>
+   <trkpt dpt="3.18" lat="60.192384" lon="21.915059">
+    <time>2018-10-15T14:02:27Z</time>
+   </trkpt>
+   <trkpt dpt="3.33" lat="60.1924" lon="21.91486">
+    <time>2018-10-15T14:02:31Z</time>
+   </trkpt>
+   <trkpt dpt="3.18" lat="60.192437" lon="21.914908">
+    <time>2018-10-15T14:02:35Z</time>
+   </trkpt>
+   <trkpt dpt="3.22" lat="60.192543" lon="21.914954">
+    <time>2018-10-15T14:02:39Z</time>
+   </trkpt>
+   <trkpt dpt="3.56" lat="60.192821" lon="21.915016">
+    <time>2018-10-15T14:02:47Z</time>
+   </trkpt>
+   <trkpt dpt="3.58" lat="60.192845" lon="21.914815">
+    <time>2018-10-15T14:02:53Z</time>
+   </trkpt>
+   <trkpt dpt="2.62" lat="60.193186" lon="21.914795">
+    <time>2018-10-15T14:03:09Z</time>
+   </trkpt>
+   <trkpt dpt="3.69" lat="60.193363" lon="21.914712">
+    <time>2018-10-15T14:03:15Z</time>
+   </trkpt>
+   <trkpt dpt="2.96" lat="60.19346" lon="21.91468">
+    <time>2018-10-15T14:03:21Z</time>
+   </trkpt>
+   <trkpt dpt="3.39" lat="60.193426" lon="21.914713">
+    <time>2018-10-15T14:03:25Z</time>
+   </trkpt>
+   <trkpt dpt="3.54" lat="60.193771" lon="21.91441">
+    <time>2018-10-15T14:03:37Z</time>
+   </trkpt>
+   <trkpt dpt="2.25" lat="60.194001" lon="21.914177">
+    <time>2018-10-15T14:03:49Z</time>
+   </trkpt>
+   <trkpt dpt="3.24" lat="60.194312" lon="21.913993">
+    <time>2018-10-15T14:03:57Z</time>
+   </trkpt>
+   <trkpt dpt="5.23" lat="60.194335" lon="21.914029">
+    <time>2018-10-15T14:04:03Z</time>
+   </trkpt>
+   <trkpt dpt="3.50" lat="60.194371" lon="21.91395">
+    <time>2018-10-15T14:04:07Z</time>
+   </trkpt>
+   <trkpt dpt="3.58" lat="60.194459" lon="21.91386">
+    <time>2018-10-15T14:04:09Z</time>
+   </trkpt>
+   <trkpt dpt="3.73" lat="60.194555" lon="21.913785">
+    <time>2018-10-15T14:04:11Z</time>
+   </trkpt>
+   <trkpt dpt="4.25" lat="60.194549" lon="21.913695">
+    <time>2018-10-15T14:04:15Z</time>
+   </trkpt>
+   <trkpt dpt="4.40" lat="60.19455" lon="21.913521">
+    <time>2018-10-15T14:04:17Z</time>
+   </trkpt>
+   <trkpt dpt="5.13" lat="60.1946" lon="21.913495">
+    <time>2018-10-15T14:04:19Z</time>
+   </trkpt>
+   <trkpt dpt="4.46" lat="60.19472" lon="21.913238">
+    <time>2018-10-15T14:04:23Z</time>
+   </trkpt>
+   <trkpt dpt="4.95" lat="60.1947" lon="21.912885">
+    <time>2018-10-15T14:04:31Z</time>
+   </trkpt>
+   <trkpt dpt="4.98" lat="60.194432" lon="21.912157">
+    <time>2018-10-15T14:04:49Z</time>
+   </trkpt>
+   <trkpt dpt="5.36" lat="60.194306" lon="21.911292">
+    <time>2018-10-15T14:05:20Z</time>
+   </trkpt>
+   <trkpt dpt="5.21" lat="60.194131" lon="21.911403">
+    <time>2018-10-15T14:05:25Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

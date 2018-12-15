@@ -1,12 +1,15 @@
-from xml.dom import minidom
-import os
-import pandas as pd
-
 '''
+Creates a DataFrame of a .gpx file
+
 input: path to the directory that contains .gpx files
 output: dataframe containing all the trips, with coordinates,
 depth and local time.
 '''
+
+from xml.dom import minidom
+import os
+import pandas as pd
+
 def parse_xml(path):
     id=0
     trips = []
