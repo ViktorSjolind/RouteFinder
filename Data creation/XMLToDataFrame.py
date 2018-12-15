@@ -28,7 +28,9 @@ def parse_xml(path):
 
         # For each coordinate point, append it to the trip list.
         for trkpt in trkpts:
-            trips.append(("Trip: {}".format(id),trkpt.getAttribute("lat"), trkpt.getAttribute("lon"),trkpt.getAttribute("dpt")))
+            #trips.append((trkpt.getAttribute("lat"), trkpt.getAttribute("lon"),trkpt.getAttribute("dpt"), "Trip: {}".format(id),))
+            trips.append((trkpt.getAttribute("lat"), trkpt.getAttribute("lon")))
     # Convert the trip list into a dataframe.
-    df = pd.DataFrame(trips, columns=['TripNo','Longitude', 'Latitude', 'Depth'])
+    #df = pd.DataFrame(trips, columns=['Longitude', 'Latitude','Depth','TripNo'])
+    df = pd.DataFrame(trips, columns=['Longitude', 'Latitude'])
     return df

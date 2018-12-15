@@ -17,4 +17,4 @@ RouteDuplicator.Duplicate(5, "route_nagu.gpx")
 RouteDuplicator.Duplicate(5, "route_stromso.gpx")
 
 dataFrame = XMLToDataFrame.parse_xml(os.getcwd())
-dataFrame.to_csv("DataFrame.csv")
+dataFrame.to_csv("DataFrame.csv", index=False)
