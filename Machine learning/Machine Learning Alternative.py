@@ -95,10 +95,10 @@ def getLineFromPoints(points, startingPoint):
     return line
         
 df = pd.read_csv("DataFrame.csv", index_col = False, header=0)
-superMap = folium.Map(location=[58.159245, 8.267858], zoom_start=14, tiles='OpenStreetMap')
+superMap = folium.Map(location=[60.19265, 21.914834], zoom_start=20, tiles='OpenStreetMap')
 drawPointsOnMap(superMap, df.values, '#3186cc', 20)
     
-clustersCenters = getDbScanClustersCenters(df, 0.03, 30)
+clustersCenters = getDbScanClustersCenters(df, 0.05, 5)
 drawPointsOnMap(superMap, clustersCenters, '#ff0000', 30)
 
 endPoint = getEndPoint(clustersCenters)
