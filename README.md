@@ -1,5 +1,7 @@
 # RouteFinder
 
+[Good git workflow tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+
 ## XML Parser instructions
 
 Assuming you are in the same directory it can be imported like a regular python package:
